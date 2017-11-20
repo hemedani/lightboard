@@ -1,0 +1,268 @@
+
+.form-item
+  display flex
+  flex-flow: row wrap
+  justify-content space-between
+
+
+	.form-tak
+		width: 100%
+		@media(min-width 690px)
+			width: 48.5%
+		background-color: rgba(136, 136, 136, 0.4)
+		padding: 0.6rem
+		border-radius: 0.5rem
+		margin: 0.5rem 0
+		min-height: 4rem
+		display: flex
+		justify-content: space-between
+		align-items: center
+		align-content: center
+		text-align: center
+		input,
+		textarea,
+		select
+			min-height: 2.6rem
+			width: 78%
+			font-size: 1.2rem
+			border: 1px solid sorme(1)
+			padding: 0 1rem
+			border-top-left-radius: 0.5rem
+			border-bottom-left-radius: 0.5rem
+			background-color: lighten(bezh(0.5), 70%)
+			&:focus
+				background-color: lighten(bezh(1), 80%)
+				outline: none
+			&:disabled
+				background-color: rgba(136, 136, 136, 0.7)
+		label
+			width: 22%
+			color: #fff
+			height: 2.5rem
+			background-color: lighten(sabz(0.1), 20%)
+			font-size: 0.8rem
+			border: 1px solid darken(sabz(1), 60%)
+			padding: 0 0.2rem
+			padding-top: 0.7rem
+			border-top-right-radius: 0.5rem
+			border-bottom-right-radius: 0.5rem
+
+
+.badogme
+	display: flex
+	flex-flow: row wrap
+	width: 100%
+	justify-content: space-between
+	align-items: center
+	.form-tak
+		width: 77%
+		input,
+		textarea
+			width: 80%
+			margin: 0
+		label
+			width: 20%
+	.dogme,
+	.vorod-bargozari
+		width: 21%
+		margin: 0
+		height: 3.2rem
+
+.form-field-div
+	display: flex
+	flex-flow: row wrap
+	width: 77%
+	height: 2rem
+	.form-field-field
+		width: 100%
+
+.radio-input
+	width: 100%
+	display flex
+	flex-direction row
+	flex-flow: row wrap
+	.radio-field
+		box-shadow: none
+		width: 20%
+	.radio-matn
+		width: 80%
+		line-height: 3
+
+
+  input.ng-invalid,
+  input.ng-invalid-required,
+  textarea.ng-invalid,
+  textarea.ng-invalid-required
+    border: 1px solid red !important
+
+  .osentekhab
+    display flex
+    flex-direction row
+    flex-flow: row wrap
+    justify-content space-between
+    li
+      list-style: none
+      width: 24%
+      cursor: pointer
+      .aks
+        img
+          width: 100%
+
+.taki
+  width: 100% !important
+
+.yekchar
+	width: 23%
+
+.yekhasht
+  width: 12.5%
+
+
+
+.form-search
+	width: 100%
+	display: flex
+	flex-flow: row wrap
+	justify-content: space-between
+	align-items: center
+	background-color: lighten(sorme(0.3), 40%)
+	border: 1px solid darken(sorme(0.5), 40%)
+	border-radius: 0.3rem
+	padding: 0.7rem 0.4rem
+	margin: 0 0 0.8rem 0
+	.form-div-search
+		width: 29%
+		display: flex
+		flex-flow: column
+		background-color: lighten(sorme(0.3), 40%)
+		border: 1px solid darken(sorme(0.5), 40%)
+		padding: 0.7rem 0.4rem
+		border-radius: 0.3rem
+		>*
+			width: 100%
+		label
+			text-align: center
+			font-size: 1rem
+			color: rgba(255, 255, 255, 0.61)
+			margin-bottom: 0.3rem
+		input
+			min-height: 2.6rem
+			font-size: 1.2rem
+			border: 1px solid sorme(1)
+			padding: 0 1rem
+			border-radius: 0.5rem
+			background-color: lighten(bezh(0.5), 70%)
+			&:focus
+				background-color: lighten(bezh(1), 80%)
+				outline: none
+			&:disabled
+				background-color: rgba(136, 136, 136, 0.7)
+	.dogme
+		width: 9%
+		margin: 0
+
+
+
+// search bar
+.form-wrapper {
+	background-color: #f6f6f6;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f6f6f6), to(#eae8e8));
+	background-image: -webkit-linear-gradient(top, #f6f6f6, #eae8e8);
+	background-image: -moz-linear-gradient(top, #f6f6f6, #eae8e8);
+	background-image: -ms-linear-gradient(top, #f6f6f6, #eae8e8);
+	background-image: -o-linear-gradient(top, #f6f6f6, #eae8e8);
+	background-image: linear-gradient(top, #f6f6f6, #eae8e8);
+	border-color: #dedede #bababa #aaa #bababa;
+	border-style: solid;
+	border-width: 1px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+	-moz-box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+	box-shadow: 0 3px 3px rgba(255,255,255,.1), 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 5px #444;
+	margin: 0 auto 1rem auto;
+	overflow: hidden;
+	padding: 8px;
+	width: 450px;
+	display flex
+	flex-direction row
+	flex-flow: row wrap
+	justify-content: space-between
+}
+
+.form-wrapper #search {
+	border: 1px solid #CCC;
+	-webkit-box-shadow: 0 1px 1px #ddd inset, 0 1px 0 #FFF;
+	-moz-box-shadow: 0 1px 1px #ddd inset, 0 1px 0 #FFF;
+	box-shadow: 0 1px 1px #ddd inset, 0 1px 0 #FFF;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+  color: #999;
+	height: 100%;
+	padding: 10px;
+	width: 79%;
+}
+
+.form-wrapper #search:focus {
+	border-color: #aaa;
+	-webkit-box-shadow: 0 1px 1px #bbb inset;
+	-moz-box-shadow: 0 1px 1px #bbb inset;
+	box-shadow: 0 1px 1px #bbb inset;
+	outline: 0;
+}
+
+.form-wrapper #search:-moz-placeholder,
+.form-wrapper #search:-ms-input-placeholder,
+.form-wrapper #search::-webkit-input-placeholder {
+	color: #999;
+	font-weight: normal;
+}
+
+.form-wrapper #submit {
+	background-color: #0483a0;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#31b2c3), to(#0483a0));
+	background-image: -webkit-linear-gradient(top, #31b2c3, #0483a0);
+	background-image: -moz-linear-gradient(top, #31b2c3, #0483a0);
+	background-image: -ms-linear-gradient(top, #31b2c3, #0483a0);
+	background-image: -o-linear-gradient(top, #31b2c3, #0483a0);
+	background-image: linear-gradient(top, #31b2c3, #0483a0);
+	border: 1px solid #00748f;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 1px 0 #FFF;
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 1px 0 #FFF;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 1px 0 #FFF;
+	color: #fafafa;
+	cursor: pointer;
+	height: 42px;
+	font: 15px Arial, Helvetica;
+	padding: 0;
+	text-transform: uppercase;
+	text-shadow: 0 1px 0 rgba(0, 0 ,0, .3);
+	width: 19%;
+}
+
+.form-wrapper #submit:hover,
+.form-wrapper #submit:focus {
+	background-color: #31b2c3;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#0483a0), to(#31b2c3));
+	background-image: -webkit-linear-gradient(top, #0483a0, #31b2c3);
+	background-image: -moz-linear-gradient(top, #0483a0, #31b2c3);
+	background-image: -ms-linear-gradient(top, #0483a0, #31b2c3);
+	background-image: -o-linear-gradient(top, #0483a0, #31b2c3);
+	background-image: linear-gradient(top, #0483a0, #31b2c3);
+}
+
+.form-wrapper #submit:active {
+	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+	outline: 0;
+}
+
+.form-wrapper #submit::-moz-focus-inner {
+	border: 0;
+}

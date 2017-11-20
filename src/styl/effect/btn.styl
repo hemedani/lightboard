@@ -1,0 +1,399 @@
+.dogme
+	overflow hidden
+	cursor pointer
+	white-space nowrap
+	position relative
+	display inline-block
+	min-height 45px
+	min-width 42px
+	padding 3px
+	outline none
+	color #fff
+	text-decoration none
+	text-shadow 0 0 1px rgba(255,255,255,0.3)
+	text-align: center
+	z-index 1
+	font-size 1rem
+	line-height 3
+	box-shadow 1px 1px 5px rgba(0, 0, 0, 0.75)
+	margin-left: 1rem
+  font-family 'Vazir', Tahoma, Verdana, Segoe, sans-serif !important
+	&:last-child
+		margin-left: 0
+	&::after
+		content ""
+		position absolute
+		z-index -1
+		padding 0.85em 0.75em
+		display block
+		transition all 0.35s
+	&:hover
+		&::after
+			left 0
+			right 0
+			top 0
+			bottom 0
+			transition all 0.35s
+	&:before
+		font-size 25px
+	&:active
+		top 2px
+		color white
+
+.icon-matn
+	white-space nowrap
+	outline none
+	border: none
+	background-color: inherit
+	cursor: pointer
+	width: 7.7rem
+	height: 2.8rem
+	position: relative
+	&:active
+		top 2px
+		color white
+	i
+		overflow: hidden
+		width: 50px
+		height: 50px
+		z-index: 1
+		padding: 0.2rem 0.7rem
+		background-color: darken(abi(1), 40%)
+		color: rgb(255, 255, 255)
+		border-radius: 50%
+		position: absolute
+		top: 0
+		right: 0
+		border: 1px solid lighten(abi(1), 40%)
+		box-shadow 1px 1px 5px rgba(0, 0, 0, 0.75)
+		&:before
+			padding 0.5rem 0.2rem 0 0.2rem
+			font-size 25px
+		&::after
+			content ""
+			position absolute
+			z-index -1
+			padding 0.85em 0.75em
+			display block
+			background-color lighten(abi(0.8), 40%)
+			border-radius 50%
+			left -50%
+			right -50%
+			top -50%
+			bottom -50%
+			transform scale(0, 0)
+			transition all 0.35s
+	span
+		overflow: hidden
+		background-color: abi(1)
+		color: rgb(255, 255, 255)
+		padding: 0.5rem 1.5rem 0.5rem 1rem
+		border-radius: 0.5rem
+		border-top-right-radius: 0
+		border-bottom-right-radius: 0
+		position: absolute
+		z-index: 0
+		top: 0.3rem
+		right: 1.9rem
+		box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.75)
+		&::after
+			content ""
+			position absolute
+			z-index -1
+			padding 0.85em 0.75em
+			display block
+			background-color lighten(abi(0.8), 40%)
+			top 0
+			bottom 0
+			left 100%
+			right -100%
+	&:hover
+		i
+			&::after
+				transform scale(1, 1)
+				transition all 0.3s ease-out
+		span
+			&::after
+				left 0
+				right 0
+				top 0
+				bottom 0
+				transition all 0.3s
+
+
+.bamatn
+	&:before
+		position: absolute
+		height: 100%
+		right: 8px
+		top: 0
+		font-size: 30px
+		line-height: 1.8
+		border-left: 2px solid rgba(255,255,255,0.5)
+		padding-left: 8px
+
+.temamsafe
+	width 100%
+	margin-bottom: 0.5rem
+	margin-left: 0
+
+.i-sabz
+	background-color darken(sabz(1), 55%) !important
+	border 1px solid sabz(1) !important
+	overflow hidden
+	&:hover
+		color lighten(bezh(1), 20%) !important
+	&::after
+		background-color darken(sabz(0.8), 70%) !important
+
+.i-ghermez
+	background-color darken(ghermez(1), 45%) !important
+	border 1px solid ghermez(1) !important
+	overflow hidden
+	&:hover
+		color lighten(sabz(1), 20%) !important
+	&::after
+		background-color darken(ghermez(0.8), 40%) !important
+
+.i-firoz
+	background-color lighten(firoze(1), 25%)
+	border 1px solid firoze(1)
+	&:hover
+		color sabz(1)
+	&::after
+		background-color darken(firoze(0.8), 40%)
+
+.i-abi
+	background-color darken(abi(1), 25%) !important
+	border 1px solid abi(1) !important
+	&:hover
+		color sabz(1) !important
+	&::after
+		background-color darken(abi(0.8), 40%) !important
+
+.i-abi-op
+	background-color abi(0.3) !important
+	border 1px solid abi(1) !important
+	&:hover
+		background-color abi(0.5) !important
+	&::after
+		background-color abi(0.8) !important
+
+.i-sorme
+	background-color lighten(sorme(1), 30%)
+	border 1px solid lighten(sorme(1), 70%)
+	overflow hidden
+	&:hover
+		color sabz(1)
+	&::after
+		background-color lighten(sorme(0.8), 40%)
+
+.i-alt
+	background-image url('../img/DSVG/iconalt.svg')
+	background-position center center
+	background-size 100% 100%
+
+.i-gerd
+	border-radius 50%
+	width 50px
+	height 50px
+	&:before
+		padding 0.5rem 0.2rem 0 0.2rem
+	&::after
+		border-radius 50%
+		left -50%
+		right -50%
+		top -50%
+		bottom -50%
+		transform scale(0, 0)
+	&:hover
+		&::after
+			transform scale(1, 1)
+			transition all 0.3s ease-out
+
+.i-round
+	border-radius 6px
+	padding 0.1rem 1rem
+	&::after
+		top 0
+		bottom 0
+		left 100%
+		right -100%
+
+.vira
+	position absolute
+	bottom 5px
+	left 8px
+	z-index 9999
+	button
+		font-size 16px
+		margin 0 5px 5px 5px
+		padding 0 5px
+		opacity 0.6
+		width 20px
+		height 20px
+		&:hover
+			opacity 1
+
+.virahazf
+	position absolute
+	bottom 5px
+	left 58px
+	z-index 9999
+	button
+		font-size 16px
+		margin 0 5px 5px 5px
+		padding 0 5px
+		opacity 0.6
+		width 20px
+		height 20px
+		&:hover
+			opacity 1
+
+.viraimg
+	position absolute
+	bottom 0px
+	left 10px
+	z-index 9999
+	button
+		font-size 16px
+		margin 0 5px 5px 5px
+		padding 0 5px
+		opacity 0.6
+		width 20px
+		height 20px
+		&:hover
+			opacity 1
+
+a.btn-edame
+	position: absolute
+	background-color: #bebebe
+	padding: 0.2rem 1.5rem
+	bottom: 10px
+	left: 8px
+	text-decoration: none
+	color: #f6f6f6
+	border-radius: 1rem
+	border-right: 1px solid #f6f6f6
+	border-left: 1px solid #f6f6f6
+	&:after
+		content: '|'
+		padding: 0.5rem
+	i
+		font-size 1.8rem
+		position absolute
+		top -5px
+		left 5px
+		padding: 0 0.4rem
+	&:hover
+		background-color: #696969
+
+
+.btn-vorod
+	position: fixed
+	left 0
+	top 90px
+	z-index 100
+	.log
+		position: absolute
+		left: 0
+		top: 0
+		height: 2rem
+		font-size: 1.1rem
+		overflow hidden
+		cursor pointer
+		white-space nowrap
+		display inline-block
+		width 60px
+		text-decoration none
+		text-align center
+		color sabz(1)
+		background darken(abi(0.8), 40%)
+		border-top-right-radius 5px
+		border-bottom-right-radius 5px
+		line-height 2
+	.khoroj
+		background darken(ghermez(0.7), 40%)
+	.modiriyat
+		a
+			cursor: pointer
+		.karbar
+			background-color: abi(1)
+			position: absolute
+			top: 2rem
+			left: 0
+			width: 50px
+			height: 1.3rem
+			font-size: 1rem
+			padding-right: 0.8rem
+			color: rgb(255, 255, 255)
+			border-top-right-radius 5px
+			border-bottom-right-radius 5px
+		.email
+			background-color: firoze(1)
+			position: absolute
+			top: 3.3rem
+			left: 0
+			width: 50px
+			height: 1.3rem
+			font-size: 1rem
+			padding-right: 0.8rem
+			color: rgb(255, 255, 255)
+			border-top-right-radius 5px
+			border-bottom-right-radius 5px
+
+
+button:disabled
+	cursor: not-allowed !important
+	background-color: rgb(125, 125, 125) !important
+	border: 1px solid rgb(98, 98, 98) !important
+	overflow hidden !important
+	&:hover
+		color rgb(186, 184, 184) !important
+	&::after
+		background-color: rgb(110, 110, 110) !important
+
+.icon-matn:disabled
+	background-color: transparent !important
+	border: none !important
+	overflow: visible !important
+	i
+		cursor: not-allowed
+		background-color: rgb(125, 125, 125) !important
+		border: 1px solid rgb(98, 98, 98) !important
+		overflow hidden
+		&:hover
+			color rgb(186, 184, 184) !important
+		&::after
+			background-color: rgb(110, 110, 110) !important
+	span
+		cursor: not-allowed
+		background-color: rgb(125, 125, 125) !important
+		border: 1px solid rgb(98, 98, 98) !important
+		overflow hidden
+		&:hover
+			color rgb(186, 184, 184) !important
+		&::after
+			background-color: rgb(110, 110, 110) !important
+
+.dognaghshe
+	color: sorme(0.9)
+	&:before
+		font-size: 3rem
+		margin-top: -0.8rem
+
+.icon-b
+	font-size: 2.2rem
+	line-height: 1
+	&:before
+		padding: 0.2rem
+
+
+.dogme-group
+	display: flex
+	flex-flow: row wrap
+	margin-bottom: 1rem
+	justify-content: space-around
+	.dogme
+		width: 19%
+		margin: 0
