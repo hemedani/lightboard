@@ -1836,6 +1836,7 @@ body {
   direction: rtl;
   font-size: 1rem;
   background-color: #fff;
+  color: #fff;
 }
 .darbar-asli {
   width: 100%;
@@ -1903,10 +1904,20 @@ body {
   color: #fee124;
 }
 .home-middle .enter-gates .with-icon .text h3 {
-  font-size: 2.5rem;
+  font-size: 1.2rem;
+}
+@media (min-width: 1817px) {
+  .home-middle .enter-gates .with-icon .text h3 {
+    font-size: 2rem;
+  }
 }
 .home-middle .enter-gates .with-icon .text h2 {
-  font-size: 4rem;
+  font-size: 1.8rem;
+}
+@media (min-width: 1817px) {
+  .home-middle .enter-gates .with-icon .text h2 {
+    font-size: 4rem;
+  }
 }
 .home-middle .enter-gates .with-icon img {
   flex: 1;
@@ -1956,7 +1967,12 @@ body {
 }
 .home-middle .middle-col-1 .illigal-wares h2 {
   color: #fee124;
-  font-size: 4rem;
+  font-size: 2.5rem;
+}
+@media (min-width: 1817px) {
+  .home-middle .middle-col-1 .illigal-wares h2 {
+    font-size: 4rem;
+  }
 }
 .home-middle .middle-col-1 .enter-men {
   flex: 1;
@@ -2023,10 +2039,20 @@ body {
   color: #fee124;
 }
 .home-middle .middle-col-3 .weather .city-details h2 {
-  font-size: 3rem;
+  font-size: 2rem;
+}
+@media (min-width: 1817px) {
+  .home-middle .middle-col-3 .weather .city-details h2 {
+    font-size: 3rem;
+  }
 }
 .home-middle .middle-col-3 .weather .city-details h1 {
-  font-size: 4rem;
+  font-size: 2.5rem;
+}
+@media (min-width: 1817px) {
+  .home-middle .middle-col-3 .weather .city-details h1 {
+    font-size: 4rem;
+  }
 }
 .home-middle .middle-col-3 .oghat {
   flex: 3;
@@ -2035,12 +2061,22 @@ body {
   text-align: center;
 }
 .home-middle .middle-col-3 .oghat h2 {
-  font-size: 4rem;
+  font-size: 2.5rem;
+}
+@media (min-width: 1817px) {
+  .home-middle .middle-col-3 .oghat h2 {
+    font-size: 4rem;
+  }
 }
 .home-middle .middle-col-3 .oghat .oghat-date {
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-bottom: 2rem;
   margin-top: 1rem;
+}
+@media (min-width: 1817px) {
+  .home-middle .middle-col-3 .oghat .oghat-date {
+    font-size: 1.5rem;
+  }
 }
 .home-middle .middle-col-3 .oghat .oghat-details {
   display: flex;
@@ -2048,7 +2084,12 @@ body {
   justify-content: space-between;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
+}
+@media (min-width: 1817px) {
+  .home-middle .middle-col-3 .oghat .oghat-details {
+    font-size: 2rem;
+  }
 }
 .home-middle .middle-col-3 .oghat .oghat-details .oghat-detail-1 {
   width: 59%;
